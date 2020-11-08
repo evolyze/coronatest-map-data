@@ -11,21 +11,25 @@ Um die Informationen so vollständig und korrekt wie möglich zu halten, bitten 
 Sehr gerne nehmen wir Änderungsvorschlage oder neue Datenpunkte als Pullrequest entgegen.
 Falls nicht anders möglich, können Änderungen auch an info@coronatest-map.ch eingereicht werden.
 
-## Datenmodell
+## Datenmodell
 
-name: String = Name des Testcenters
-address: String = Strasse inkl. Hausnummer
-zip: Number = Postleitzahl
-city: String = Ort
-canton: String = Kürzel des Kantons
-type: 'hospital' | 'pharmacy' | 'drive-in' | 'clinic' = Typ des Testcenters
-webseite: String = Webseite
-phone: String = Telefonnummer
-mo_1 - so_4: Zeitangabe in hh:mm = Öffnungszeiten des jeweiligen Tages(mo, tu, we, th, fr, sa, so)
-appointment: 'online' | 'phone' | 'app' = Angabe, wie Anmeldung erfolgen soll
-testTypes: tbd
-remarks: String = Weitere Angaben
-source: String = URL, wo die Angaben gefunden wurden
+| field_name  | type                                             | description                                                     |
+| ----------- | ------------------------------------------------ | --------------------------------------------------------------- |
+| Header      | Title                                            |
+| Paragraph   | Text                                             |
+| name        | String                                           | Name des Testcenters                                            |
+| address     | String                                           | Strasse inkl. Hausnummer                                        |
+| zip         | Number                                           | Postleitzahl                                                    |
+| city        | String                                           | Ort                                                             |
+| canton      | String                                           | Kürzel des Kantons                                              |
+| type        | { 'hospital', 'pharmacy', 'drive-in' , 'clinic'} | Typ des Testcenters                                             |
+| website     | String                                           | Webseite                                                        |
+| phone       | String                                           | Telefonnummer                                                   |
+| mo_1 - so_4 | Zeitangabe in hh:mm                              | Öffnungszeiten des jeweiligen Tages(mo, tu, we, th, fr, sa, so) |
+| appointment | {'online' , 'phone' , 'app'}                     | Angabe, wie Anmeldung erfolgen soll                             |
+| testTypes   | tbd                                              | tbd                                                             |
+| remarks     | String                                           | Weitere Angaben                                                 |
+| source      | String                                           | URL, wo die Angaben gefunden wurden                             |
 
 ## Anmerkungen
 
